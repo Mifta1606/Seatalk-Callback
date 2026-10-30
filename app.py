@@ -60,7 +60,7 @@ def callback():
         return "invalid signature", 403
 
     data = request.get_json(silent=True) or {}
-        print("EVENT:", data, flush=True)
+    print("EVENT:", data, flush=True)
     event_type = data.get("event_type")
 
     # Verifikasi URL saat pertama kali didaftarkan
